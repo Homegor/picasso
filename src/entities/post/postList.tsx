@@ -23,7 +23,7 @@ export const PostList: React.FC<PostDetailsProps> = ({postId}) => {
                 <IdesItem>{"# " + data.id}</IdesItem>
                 <TitleItem>{data.title}</TitleItem>
                 <BodyItem>{data.body}</BodyItem>
-                <ToLink to={"/"}>Назад</ToLink>
+                <ToLink to={"/picasso/"}>Назад</ToLink>
             </div>
         );
     }else {

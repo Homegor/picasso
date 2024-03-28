@@ -8,8 +8,8 @@ function App(){
   return (
       <BrowserRouter>
           <Routes>
-              <Route path={"/"} element={<HomePage/>}/>
-              <Route path={"/post/:postId"} element={<ListPage/>}/>
+              <Route path={"/picasso"} element={<HomePage/>}/>
+              <Route path={"/picasso/post/:postId"} element={<ListPage/>}/>
           </Routes>
       </BrowserRouter>
   )
