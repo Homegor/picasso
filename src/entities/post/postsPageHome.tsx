@@ -5,7 +5,7 @@ import {BodyItem, NotFound, IdesItem, PostContent, TitleItem, ToLink} from "../.
 export const PostsPageHome = () => {
     const [currentPostStart,setCurrentPostStart]=useState(0)
 
-    const {data, isLoading, isError, isSuccess} = useGetPostQuery({limit:30, start:currentPostStart});
+    const {data, isLoading, isError, isSuccess} = useGetPostQuery({limit:100, start:currentPostStart});
     const [isMyFetching,setIsFetchingDown]=useState(false)
     const [isMyFetchingUp,setIsMyFetchingUp]=useState(false)
 
