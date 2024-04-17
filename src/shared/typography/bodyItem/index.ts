@@ -1,1 +1,0 @@
-export {BodyItem} from "./bodyItem"
