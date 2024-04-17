@@ -3,7 +3,7 @@ import {useGetPostQuery} from "../../app/store/slice/slice";
 import {BodyItem, NotFound, IdesItem, PostContent, TitleItem, ToLink} from "../../shared";
 
 export const PostsPageHome = () => {
-    const {data, isLoading, isError, isSuccess} = useGetPostQuery({limit:30, start:0});
+    const {data, isLoading, isError, isSuccess} = useGetPostQuery({limit:100, start:0});
 
     if (isLoading) {
         return <h1>Lading...</h1>
